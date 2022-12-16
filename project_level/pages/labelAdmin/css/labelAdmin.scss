@@ -1,0 +1,49 @@
+page{
+	background-color: $bg-color;
+}
+.label-container{
+	.label-box{
+		margin-bottom: 20rpx;
+		background-color: #fff;
+		.label-header{
+			@include flex();
+			padding: 20rpx 30rpx;
+			font-size: 28rpx;
+			border-bottom: 1px solid $bg-color;
+			.label-title{
+				color: #666;
+			}
+			.label-edit{
+				color: #30b33a;
+				font-weight: bold;
+			}
+		}
+		.label-content{
+			@include flex(flex-start,row,wrap);
+			padding: 0 30rpx 30rpx;
+			.label-content-item{
+				position: relative;
+				padding: 4rpx 10rpx;
+				margin: 24rpx 20rpx 0 0;
+				border-radius: 10rpx;
+				border: 1px solid #666;
+				font-size: 28rpx;
+				color: #666;
+				.icon-close{
+					position: absolute;
+					right: -24rpx;
+					top: -24rpx;
+					background-color: #ffffff;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.no-data{
+		width: 100%;
+		font-size: 28rpx;
+		color: $c-9;
+		text-align: center;
+		padding: 100rpx;
+	}
+}

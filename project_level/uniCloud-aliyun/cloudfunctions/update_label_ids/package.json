@@ -1,0 +1,7 @@
+{
+  "name": "update_label_ids",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

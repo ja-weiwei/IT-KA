@@ -1,0 +1,117 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" //
+			}
+		}, {
+			"path": "pages/follow/follow",
+			"style": {
+				"navigationBarTitleText": "关注",
+				"enablePullDownRefresh": false
+			},
+			"meta": {
+				"needLogin": true
+			}
+		}, {
+			"path": "pages/self/self",
+			"style": {
+				"navigationBarTitleText": "用户信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/labelAdmin/labelAdmin",
+			"style": {
+				"navigationBarTitleText": "标签管理",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/userInfo/login/login",
+			"style": {
+				"navigationBarTitleText": "用户登录",
+				"enablePullDownRefresh": false
+			},
+			"name": "login"
+		}, {
+			"path": "pages/articleDetail/articleDetail",
+			"style": {
+				"navigationBarTitleText": "详情页面",
+				"enablePullDownRefresh": false
+			}
+		}
+
+		, {
+			"path": "pages/commentList/commentList",
+			"style": {
+				"navigationBarTitleText": "评论列表",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/myArticle/myArticle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的文章",
+                "enablePullDownRefresh": false
+            },
+			"meta": {
+				"needLogin": true
+			}
+            
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "意见反馈",
+                "enablePullDownRefresh": false
+            },
+			"meta": {
+				"needLogin": true
+			}
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "脱发俱乐部",
+		"navigationBarBackgroundColor": "#f25037",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#f25037",
+		"backgroundColor": "#fff",
+		"list": [ // 显示页面信息,包含了tabbar需要跳转的所有的页面信息
+			{
+				"pagePath": "pages/index/index", // 页面路径
+				"iconPath": "static/img/home.png", // 默认图片
+				"selectedIconPath": "static/img/home-active.png", // 选中图片
+				"text": "首页" // 文字描述信息
+			},
+			{
+				"pagePath": "pages/follow/follow",
+				"iconPath": "static/img/follow.png",
+				"selectedIconPath": "static/img/follow-active.png",
+				"text": "关注"
+			},
+			{
+				"pagePath": "pages/self/self",
+				"iconPath": "static/img/my.png",
+				"selectedIconPath": "static/img/my-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}

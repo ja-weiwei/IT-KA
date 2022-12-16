@@ -1,0 +1,7 @@
+{
+  "name": "update_follow_author",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "update_save_like",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,83 @@
+.login-container {
+    background-color: #F8F8F8;
+    width: 100%;
+    .banner-bg {
+        width: 100%;
+        height: 400rpx;
+    }
+    .login-nav {
+        @include flex();
+        padding: 0 146rpx;
+        font-size: 30rpx;
+        font-weight: bold;
+        color: $c-9;
+        .nav-item {
+            position: relative;
+            margin-bottom: 40rpx;
+            &.active {
+                color: $base-color;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -20rpx;
+                    width: 60rpx;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 8rpx;
+                    border-radius: 4rpx;
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+    .footer-select-container {
+        width: 640rpx;
+        margin: 20rpx auto;
+        @include flex();
+        color: $c-9;
+        font-size: 26rpx;
+        text-decoration: underline;
+    }
+}
+
+/deep/ .uni-forms-item__content {
+    @include flex(flex-start, center);
+    padding-left: 40rpx;
+}
+
+/deep/ .uni-forms-item {
+    padding-left: 30rpx;
+    border-bottom: 1px solid #eee;
+    padding-top: 24rpx;
+    background-color: #fff;
+}
+
+/deep/ .uni-forms-item__inner {
+    padding-bottom: 24rpx;
+}
+
+/deep/ .label-text span {
+    font-size: 32rpx;
+}
+
+.placeholder {
+    color: #999;
+}
+
+.login-btn {
+    width: 640rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    background-color: $base-color;
+    color: #FFFFFF;
+    font-size: 32rpx;
+    @include flex(center);
+    margin-top: 80rpx;
+}
+
+
+/* 使用uni-easyinput 进行bug修复 */
+
+/deep/ .uni-easyinput__content-input {
+    padding-left: 0 !important;
+}
